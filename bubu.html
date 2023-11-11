@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .image {
+      flex: 1;
+      order: 2; /* Default order for desktop */
+    }
+
+    .text {
+      flex: 1;
+      order: 1; /* Default order for desktop */
+    }
+
+    @media (max-width: 768px) {
+      /* Mobile view styles */
+      .container {
+        flex-direction: column;
+      }
+
+      .image,
+      .text {
+        order: 0; /* Reset order for mobile */
+        width: 100%; /* Take full width in mobile view */
+      }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <div class="image">
+    <img style="height: 500px;" src="./img/razor.png" alt="Your Image">
+  </div>
+  <div class="text">
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae at quisquam exercitationem 
+        reprehenderit fugit blanditiis doloremque odio facilis, obcaecati recusandae doloribus quos voluptate 
+        porro corrupti est laboriosam aliquid ex nobis.</p>
+  </div>
+</div>
+
+</body>
+</html>
+```
+

@@ -1,0 +1,515 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,500;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+
+
+html {
+    font-family: 'Roboto', sans-serif;
+    transition: 0.5s;
+    scroll-behavior: smooth;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.header{
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.download-button {
+    height: 40px;
+    width: 140px;
+    border-radius: 10px;
+    border: solid 1px #f1b24a;
+    margin-left: 35px;
+    transition: 0.10s;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.download-button:hover {
+    background-color: #f1b24a;
+    box-shadow: 0 0 20px #f1b24a;
+}
+
+.navbar {
+    position: fixed;
+    display: flex;
+    height: 4rem;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #385739;
+    width: 100%;
+    box-shadow: 0 2px 2px -2px black;
+    z-index: 2;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item {
+    margin-left: 2rem;
+
+}
+
+.nav-link{
+    font-size: 1.3rem;
+    font-weight: 300;
+    color: white;
+    transition: 0.10s;
+}
+
+.nav-link:hover{
+    text-decoration: underline #f1b24a;
+    text-underline-offset: 8px;
+    text-shadow: 1px 1px 2px #f1b24a;
+}
+
+.nav-logo {
+    font-family: 'BlackOps' !important;
+    font-size: 2rem;
+    font-weight: 300px;
+    border-radius: 40px;
+    color: white;
+    text-shadow: 2px 2px 8px black;
+    width: 4%;
+    text-align: center;
+    color: #f1b24a;
+    transition: 0.10s;
+}
+
+.nav-logo:hover {
+    text-shadow: 1px 1px 30px #f1b24a;
+}
+
+@media only screen and (max-width: 768px) {
+.nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-item {
+    margin: 2.5rem 0;
+}
+
+.hamburger {
+    display: block;
+    cursor: pointer;
+}
+
+.hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+
+.hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+}
+
+}
+
+
+/* Home Section */
+
+#home {
+    height: 100%;
+    background-color: #4D774e;
+    padding: 16rem 0 14rem 0;
+}
+
+.sec1-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+
+.pfp {
+    height: 100%;
+    background-color: #f1b24a;
+    border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;   
+}
+
+.pfp-container {
+    filter: drop-shadow(0 0 20px black);
+    margin-right: 2rem;
+}
+
+.introduction {
+    color: rgba(168, 167, 167, 0.719);
+    opacity: 0.1px;
+    font-family: 'BlackOps';
+    font-size: 1.2rem;
+}
+
+#name {
+    color: red;
+    text-shadow: 0 0 10px black;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-left: 10px;
+}
+
+.H-1 {
+    font-size: 1.8rem;
+    color: white;
+    font-family: 'BlackOps';
+    filter: drop-shadow(0 0 5px black);
+}
+
+.h1-intro-container {
+    padding: 0 2rem;
+}
+
+.icon-container {
+    display: flex;
+    margin-top: 40px;
+    gap: 2px;
+}
+
+ .social-icon {
+    height: 15px;
+    cursor: pointer;
+    margin-right: 2px;
+ }
+
+ .username {
+    margin-right: 60px;
+    cursor: pointer;
+    font-size: 12px;
+    color: white;
+    font-weight: 100;
+ }
+ .username:hover {
+    text-decoration: underline;
+    text-shadow: 1px 1px 10px white;
+ }
+
+ .my-projects {
+    font-family: 'BlackOps';
+    color: white;
+    font-size: 3.5rem;
+    text-align: center;
+    margin-bottom: 8rem;
+    text-decoration: underline;
+    text-underline-offset: 25px;
+    text-shadow: 1px 1px 10px black;
+    cursor: pointer;
+ }
+
+
+/* About Section */
+
+#about {
+    height: 100%;
+    padding: 30px 0;
+    background-color: #f1b24a;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+/* Responsive in About Section */
+
+@media only screen and (min-width: 768px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+
+    .container2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 10rem;
+    }
+    .saxo {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 5rem;
+    }
+
+    .texto {
+        width: 100%;
+        text-align: start;
+        margin-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+
+    .my-certificates {
+        font-size: 3rem;
+        font-family: 'BlackOps';
+        margin-bottom: 3rem;
+        color: white;
+        text-shadow: 2px 2px 10px black;
+        text-decoration: underline;
+        text-underline-offset: 15px;
+        cursor: pointer;
+    }
+  }
+  
+  /* Mobile view */
+  @media only screen and (max-width: 767px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .container2 {
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+
+    
+
+    .image {
+        width: 70%;
+        border-radius: 20px;
+    }
+
+    .text {
+        text-align: center;
+        font-size: .7rem;
+    }
+
+    .my-projects {
+        font-family: 'BlackOps';
+        color: white;
+        font-size: 2.3rem;
+        text-align: center;
+        margin-bottom: 6rem;
+        text-decoration: underline;
+        text-underline-offset: 25px;
+     }
+
+    .username {
+        margin-right: 20px;
+        font-size: 10px;
+    }
+
+    .my-certificates {
+        font-size: 2rem;
+        font-family: 'BlackOps';
+        margin-bottom: 1rem;
+        color: white;
+    }
+
+    #services {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 5rem;
+        font-size: 12px;
+    }
+
+    .hire-ask-button {
+        display: grid;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .servicess {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 3rem;
+        padding: 2rem 0;
+    }
+
+    .saxo {
+        display: grid;
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .texto {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 1rem;
+        font-size: .7rem;
+    }
+
+    .grad-pic {
+        width: 100%;
+    }
+
+}
+
+
+
+.h1-project1 {
+    color: white;
+    font-size: 2.5rem;
+    font-family: 'BlackOps';
+    margin-bottom: 20px;
+}
+
+.imahe {
+    border-radius: 20px;
+}
+
+/* Cert Section */
+
+#certificates {
+    height: 120%;
+    padding: 5rem;
+    background-color: #4D774e;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    z-index: 1;
+}
+
+/* Carousel */
+
+.gen1 {
+    width: 30%;
+}
+
+
+/* Services Section */
+
+#services {
+    height: 100%;
+    background-color: #4D774e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top: solid 1px white;
+    border-bottom: solid 1px white;
+}
+
+.servicess {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    padding: 4rem 0;
+}
+
+.serv-img-div {
+    background-color: #f1b24a;
+    padding: 2rem;
+}
+
+.step-into {
+    text-align: start;
+    color: white;
+    font-family: 'BlackOps';
+    font-size: 2rem;
+}
+
+.hire-button {
+    height: 40px;
+    width: 180px;
+    border-radius: 10px;
+    border: solid 1px #f1b24a;
+    transition: 0.10s;
+    margin-right: 1rem;
+    font-family: 'BlackOps';
+    color: white;
+    font-size: 1.5rem;
+}
+
+.hire-button:hover {
+    background-color: #f1b24a;
+    box-shadow: 0 0 20px #f1b24a;
+}
+
+.askme {
+    background-color: #f1b24a !important;
+    border: solid 1px black;
+}
+
+.grad-pic {
+    background-color: #f1b24a;
+    padding: 1rem;
+}
+
+
+/* Footer */
+
+#footer {
+    height: 50%;
+    background-color: black;
+    display: grid;
+    text-align: center;
+    align-items: last baseline;
+    padding-top: 2rem;
+    
+}
+
+.copy-div {
+    margin-top: 5rem;
+}
+
+.copyright {
+    color: white;
+    font: 1rem;
+}
+
+.etc-div {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+  
+
+
