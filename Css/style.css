@@ -36,6 +36,9 @@ a {
     background-color: #f1b24a;
     box-shadow: 0 0 20px #f1b24a;
 }
+.download-button:active {
+    background-color: #f1b14a9f;
+}
 
 .navbar {
     position: fixed;
