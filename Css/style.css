@@ -24,7 +24,7 @@ a {
 .download-button {
     height: 40px;
     width: 140px;
-    border-radius: 10px;
+    border-radius: 2px;
     border: solid 1px #f1b24a;
     margin-left: 35px;
     transition: 0.10s;
@@ -95,7 +95,6 @@ a {
     font-family: 'BlackOps' !important;
     font-size: 2rem;
     font-weight: 300px;
-    border-radius: 40px;
     color: white;
     text-shadow: 2px 2px 8px black;
     width: 4%;
@@ -109,46 +108,45 @@ a {
 }
 
 @media only screen and (max-width: 768px) {
-.nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-}
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 5rem;
+        flex-direction: column;
+        background-color: #fff;
+        width: 100%;
+        border-radius: 10px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
 
-.nav-menu.active {
-    left: 0;
-}
+    .nav-menu.active {
+        left: 0;
+    }
 
-.nav-item {
-    margin: 2.5rem 0;
-}
+    .nav-item {
+        margin: 2.5rem 0;
+    }
 
-.hamburger {
-    display: block;
-    cursor: pointer;
-}
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
 
-.hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-}
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
 
-.hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-}
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
 
-.hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-}
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 
 }
-
 
 /* Home Section */
 
@@ -163,7 +161,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 10rem;
-}
+}  
 
 .pfp {
     height: 100%;
@@ -172,8 +170,8 @@ a {
 }
 
 .pfp-container {
-    filter: drop-shadow(0 0 20px black);
     margin-right: 2rem;
+    filter: drop-shadow(0 0 20px black);
 }
 
 .introduction {
@@ -241,16 +239,7 @@ a {
 
 /* About Section */
 
-#about {
-    height: 100%;
-    padding: 30px 0;
-    background-color: #f1b24a;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    border-top: solid 1px white;
-    border-bottom: solid 1px white;
-}
+
 
 /* Responsive in About Section */
 
@@ -268,15 +257,17 @@ a {
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
-        gap: 10rem;
+        gap: 5rem;
     }
-    .saxo {
+
+    /* imp */
+    .omen  {
         display: grid;
         grid-template-columns: 1fr 1fr;
         align-items: center;
         justify-content: center;
         gap: 4rem;
-        padding: 5rem;
+        padding: 1rem;
     }
 
     .texto {
@@ -296,10 +287,63 @@ a {
         text-underline-offset: 15px;
         cursor: pointer;
     }
+
+    #about {
+        height: 100%;
+        padding: 70px 0 ;
+        background-color: #f1b24a;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+    }
+
+    #certificates {
+        height: 100%;
+        padding: 5rem;
+        background-color: #4D774e;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* z-index: 1; */
+        border-bottom: solid 1px rgba(255, 255, 255, 0.473);
+    }
+
+    #services {
+        height: 100%;
+        background-color: #4D774e;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1.6rem 0 ;
+    }
+
+    .lorem {
+        font-size: 1rem;
+    }
+
+    .etc-div {
+        display: flex;
+        justify-content: space-around;
+    }
   }
   
   /* Mobile view */
   @media only screen and (max-width: 767px) {
+
+    #about {
+        height: 100%;
+        padding: 1rem 0;
+        background-color: #f1b24a;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(200, 1fr));
+        grid-gap: 1rem;
+        border-top: solid 1px white;
+        border-bottom: solid 1px white;
+    }
+
     .container {
         display: flex;
         flex-direction: column-reverse;
@@ -313,11 +357,9 @@ a {
         align-items: center;
     }
 
-    
-
-    .image {
-        width: 70%;
-        border-radius: 20px;
+    .image2 {
+        width: 100% !important;
+        border-radius: 2px;
     }
 
     .text {
@@ -349,9 +391,10 @@ a {
 
     #services {
         display: flex;
+        background-color: #4D774e;
         align-items: center;
         justify-content: center;
-        padding: 5rem;
+        padding: 1rem;
         font-size: 12px;
     }
 
@@ -368,15 +411,15 @@ a {
         align-items: center;
         justify-content: center;
         gap: 3rem;
-        padding: 2rem 0;
+        padding: 1rem 0;
     }
 
-    .saxo {
+    .omen {
         display: grid;
-        flex-direction: column;
-        padding: 10px;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 1rem;
+        justify-content: center;
         align-items: center;
-        gap: 1rem;
     }
 
     .texto {
@@ -386,13 +429,68 @@ a {
         font-size: .7rem;
     }
 
-    .grad-pic {
+    .sec1-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(200, 1fr));
+        grid-gap: 1rem;
+        /* padding: 1rem; */
+    }
+    .pfp-container {        
+        /* margin-right: 2rem; */
         width: 100%;
+        /* height: 100%; */
+        margin-top: 2rem;
+        /* margin: 1rem; */
+    }
+    .pfp {
+        height: 100%;
+        background-color: #f1b24a;
+        border-radius: 2px;
+        object-fit: cover;
     }
 
+    .pfp-container {
+        filter: drop-shadow(0 0 20px black);
+    }
+
+    #home {
+        height: 100%;
+        background-color: #4D774e;
+        padding: 6rem 0;
+    }
+
+    .context {
+        text-align: start;
+        font-size: 13px;
+    }
+
+    .step {
+        font-size: 13px;
+    }
+
+    #certificates {
+        height: 100%;
+        padding: 1rem;
+        background-color: #4D774e;
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        /* z-index: 1; */
+        border-bottom: solid 1px rgba(255, 255, 255, 0.473);
+    }
+
+    .lorem {
+        font-size: 13px;
+    }
+
+    .etc-div {
+        display: flex;
+        justify-content: space-around;
+        gap: 3rem;
+        padding: 1rem;
+    }
 }
-
-
 
 .h1-project1 {
     color: white;
@@ -402,40 +500,12 @@ a {
 }
 
 .imahe {
-    border-radius: 20px;
+    border-radius: 2px;
 }
 
 /* Cert Section */
 
-#certificates {
-    height: 120%;
-    padding: 5rem;
-    background-color: #4D774e;
-    display: grid;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    z-index: 1;
-}
-
 /* Carousel */
-
-.gen1 {
-    width: 30%;
-}
-
-
-/* Services Section */
-
-#services {
-    height: 100%;
-    background-color: #4D774e;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-top: solid 1px white;
-    border-bottom: solid 1px white;
-}
 
 .servicess {
     display: grid;
@@ -443,7 +513,7 @@ a {
     align-items: center;
     justify-content: center;
     gap: 5rem;
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .serv-img-div {
@@ -461,7 +531,7 @@ a {
 .hire-button {
     height: 40px;
     width: 180px;
-    border-radius: 10px;
+    border-radius: 2px;
     border: solid 1px #f1b24a;
     transition: 0.10s;
     margin-right: 1rem;
@@ -483,6 +553,7 @@ a {
 .grad-pic {
     background-color: #f1b24a;
     padding: 1rem;
+    border-radius: 2px !important;
 }
 
 
@@ -495,6 +566,7 @@ a {
     text-align: center;
     align-items: last baseline;
     padding-top: 2rem;
+    border-top: solid 1px white;
     
 }
 
@@ -507,14 +579,12 @@ a {
     font: 1rem;
 }
 
-.etc-div {
-    display: flex;
-    justify-content: space-around;
-}
 
-.grad-pic {
+
+/* .grad-pic {
     border-radius: 23px;
-}
+} */
+
 
 
   
