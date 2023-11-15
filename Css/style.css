@@ -252,6 +252,15 @@ a {
         gap: 4rem;
     }
 
+    .omen  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 1rem;
+    }
+
     .container2 {
         display: grid;
         grid-template-columns: 1fr 1fr;
@@ -261,14 +270,7 @@ a {
     }
 
     /* imp */
-    .omen  {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        align-items: center;
-        justify-content: center;
-        gap: 4rem;
-        padding: 1rem;
-    }
+    
 
     .texto {
         width: 100%;
@@ -307,7 +309,6 @@ a {
         align-items: center;
         justify-content: center;
         text-align: center;
-        /* z-index: 1; */
         border-bottom: solid 1px rgba(255, 255, 255, 0.473);
     }
 
@@ -322,6 +323,12 @@ a {
 
     .lorem {
         font-size: 1rem;
+        color: rgba(255, 255, 255, 0.555);
+        cursor: pointer;
+    }
+
+    .lorem:hover {
+        color: rgb(87, 87, 87);
     }
 
     .etc-div {
@@ -342,6 +349,15 @@ a {
         grid-gap: 1rem;
         border-top: solid 1px white;
         border-bottom: solid 1px white;
+    }
+
+    .omen  {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+        padding: 1rem;
     }
 
     .container {
@@ -365,6 +381,7 @@ a {
     .text {
         text-align: center;
         font-size: .7rem;
+        
     }
 
     .my-projects {
@@ -482,6 +499,7 @@ a {
 
     .lorem {
         font-size: 13px;
+        
     }
 
     .etc-div {
@@ -574,13 +592,20 @@ a {
     margin-top: 5rem;
 }
 
-.copyright {
-    color: white;
+.Copyright {
+    color: rgba(255, 255, 255, 0.356);
     font: 1rem;
 }
 
+.Copyright:hover {
+    color: rgba(128, 128, 128, 0.699);
+}
 
-
+.poki {
+    background-color: #f1b24a;
+    padding: 1rem;
+    border-radius: 2px !important;
+}
 /* .grad-pic {
     border-radius: 23px;
 } */
