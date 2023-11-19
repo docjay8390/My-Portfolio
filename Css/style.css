@@ -20,7 +20,6 @@ li {
 
 a {
     text-decoration: none;
-    color: white;
 }
 
 .header{
@@ -29,7 +28,7 @@ a {
 
 .download-button {
     height: 35px;
-    width: 140px;
+    padding: 0 1rem;
     border-radius: 2px;
     border: solid 1px #f1b24a;
     transition: 0.10s;
@@ -70,13 +69,6 @@ a {
 
 }
 
-.nav-link{
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: white;
-    transition: 0.10s;
-}
-
 .nav-link:hover{
     text-decoration: underline #f1b24a;
     text-underline-offset: 8px;
@@ -99,15 +91,23 @@ a {
     text-shadow: 1px 1px 30px #f1b24a;
 }
 
+.nav-link{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: white;
+    transition: 0.10s;
+}
+
 @media only screen and (max-width: 768px) {
     .nav-menu {
         position: fixed;
         left: -100%;
-        top: 5rem;
+        top: 4rem;
         flex-direction: column;
-        background-color: #fff;
+        background-color: rgba(255, 255, 255, 0.932);
         width: 100%;
-        border-radius: 10px;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
@@ -138,6 +138,16 @@ a {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+}
+
+@media only screen and (max-width: 767px) {
+
+    .nav-link{
+        font-size: 1.2rem;
+        font-weight: 300;
+        color: black;
+        transition: 0.10s;
+    }
 }
 
 /* Home Section */
@@ -365,7 +375,7 @@ a {
 
     #projects {
         height: 100%;
-        padding: 1rem 0;
+        padding: 4rem 0;
         background-color: #f1b24a;
         display: grid;
         grid-template-columns: repeat(auto-fit, min-max(200, 1fr));
@@ -423,7 +433,7 @@ a {
     #services {
         border-bottom: solid 1px rgb(255, 255, 255);
         background-color: #f1b24a;
-        padding: 3rem 1rem;
+        padding: 4rem 1rem;
         font-size: 12px;
         border-top: solid 1px rgb(255, 255, 255);
     }
@@ -485,7 +495,7 @@ a {
     #home {
         height: 100%;
         background-color: #4D774e;
-        padding: 5rem 0;
+        padding: 10rem 0 5rem 0;
     }
 
     .context {
@@ -501,7 +511,7 @@ a {
 
     #certificates {
         height: 100%;
-        padding: 1rem;
+        padding: 5rem 1rem;
         background-color: #4D774e;
         display: grid;
         align-items: center;
@@ -829,7 +839,7 @@ a {
         background-color: #4D774e;
         align-items: center;
         justify-content: center;
-        padding: 3rem 1rem;
+        padding: 4.5rem 1rem;
         font-size: 12px;
         border-bottom: solid 1px white;
     }
