@@ -829,6 +829,13 @@ a {
         border-radius: 10px;
         cursor: pointer;
     }
+
+    .download-cv {
+        border: solid 1px white;
+        padding: 10px;
+        border-radius: 2px;
+        transition: .15s;
+    }
 }
 
 
@@ -866,6 +873,13 @@ a {
         cursor: pointer;
         border-radius: 10px;
     }
+
+    .download-cv {
+        border: solid 1px white;
+        padding: 2px 20px;
+        border-radius: 2px;
+        transition: .15s;
+    }
 }
 
 .icon-icon {
@@ -889,6 +903,12 @@ a {
     text-underline-offset: 15px;
     cursor: pointer;
     text-align: center;
+}
+
+
+.download-cv:hover {
+    background-color: gray;
+    color: black;
 }
 
 
