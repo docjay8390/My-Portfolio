@@ -322,7 +322,7 @@ a {
     }
 
     .navbar {
-        max-width: 120rem;
+        max-width: 160rem;
         position: fixed;
         width: 100%;
         display: flex;
@@ -334,6 +334,7 @@ a {
         box-shadow: 0 2px 2px -2px black;
         border-bottom: solid 1px rgba(245, 245, 245, 0.39);
         z-index: 2;
+        min-width: none;
     }
     #home {
         height: 100%;
@@ -513,7 +514,7 @@ a {
     }
 
     .navbar {
-        max-width: 120rem;
+        max-width: 160rem;
         position: fixed;
         width: 100%;
         display: flex;
@@ -525,9 +526,10 @@ a {
         box-shadow: 0 2px 2px -2px black;
         border-bottom: solid 1px rgba(245, 245, 245, 0.39);
         z-index: 2;
+        min-width: none;
     }
     .navbar {
-        max-width: 120rem;
+        max-width: 160rem;
         position: fixed;
         width: 100%;
         display: flex;
@@ -537,6 +539,7 @@ a {
         background-color: #385739;
         box-shadow: 0 2px 2px -2px black;
         z-index: 2;
+        min-width: none;
     }
 
     .lorem {
@@ -549,6 +552,21 @@ a {
         color: rgb(87, 87, 87);
     }
 }
+
+@media screen and (max-width: 320px) {
+    .navbar {
+      /* Adjust the styling for smaller screens */
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .navbar a {
+      /* Optionally adjust link styles for better readability */
+      display: block;
+      padding: 10px;
+      margin-bottom: 10px;
+    }
+  }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
     .sec1-container {
