@@ -303,6 +303,7 @@ a {
         background-color: #f1b24a;
         padding: 3rem 1rem 4rem 1rem;
         border-bottom: solid 1px rgb(255, 255, 255);
+        border-top: solid 1px rgb(255, 255, 255);
     }
 
     .lorem {
@@ -424,6 +425,7 @@ a {
         background-color: #f1b24a;
         padding: 3rem 1rem;
         font-size: 12px;
+        border-top: solid 1px rgb(255, 255, 255);
     }
 
     .hire-ask-button {
@@ -878,6 +880,7 @@ a {
     cursor: pointer;
     text-align: center;
 }
+
 
 
 
