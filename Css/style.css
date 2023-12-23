@@ -83,15 +83,19 @@ a {
 }
 
 .nav-logo {
-    font-family: 'BlackOps' !important;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
     font-size: 1.8rem;
     font-weight: 300px;
     color: white;
     text-shadow: 2px 2px 8px black;
-    width: 4%;
     text-align: center;
     color: #f1b24a;
     transition: 0.10s;
+    
+}
+
+.hols {
+    transform: rotate(20deg);
 }
 
 .nav-logo:hover {
@@ -103,6 +107,11 @@ a {
     font-weight: 300;
     color: white;
     transition: 0.10s;
+}
+
+.im {
+    margin-right: 10px;
+    display: flex;
 }
 
 @media only screen and (max-width: 768px) {
@@ -177,7 +186,7 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10rem;
+    gap: 5rem;
 }  
 
 .pfp {
@@ -185,6 +194,7 @@ a {
     background-color: #f1b24a;
     border-radius: 40% 60% 65% 35% / 40% 35% 65% 60%;   
 }
+/* ---------------------------------------------------------------------------------------------------------------------- */
 
 .pfp-container {
     margin-right: 2rem;
@@ -195,22 +205,23 @@ a {
     color: rgba(168, 167, 167, 0.719);
     opacity: 0.1px;
     font-family: 'BlackOps';
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 }
 
 #name {
     color: red;
     text-shadow: 0 0 10px black;
-    font-size: 2rem;
+    font-size: 3.8rem;
     font-weight: 700;
-    margin-left: 10px;
+    
 }
 
 .H-1 {
-    font-size: 1.8rem;
+    font-size: 2.6rem;
     color: white;
     font-family: 'BlackOps';
     filter: drop-shadow(0 0 5px black);
+    
 }
 
 .h1-intro-container {
@@ -220,11 +231,11 @@ a {
 .icon-container {
     display: flex;
     margin-top: 40px;
-    gap: 2px;
+    gap: 2rem;
 }
 
  .social-icon {
-    height: 15px;
+    height: 30px;
     cursor: pointer;
     margin-right: 2px;
  }
@@ -268,6 +279,8 @@ a {
         justify-content: center;
         gap: 4rem;
     }
+
+    
 
     .omen  {
         display: grid;
@@ -506,6 +519,7 @@ a {
         display: grid;
         grid-template-columns: repeat(auto-fit, min-max(200, 1fr));
         grid-gap: 1rem;
+        padding: 0 1.3rem;
         /* padding: 1rem; */
     }
     .pfp-container {        
@@ -556,14 +570,15 @@ a {
 
     .lorem {
         font-size: 13px;
-        
+      
     }
 
     .etc-div {
         display: flex;
-        justify-content: space-around;
-        gap: 3rem;
+        justify-content: start;
+        text-align: start;
         padding: 1rem;
+        flex-direction: column;
     }
 
     .navbar {
@@ -628,12 +643,67 @@ a {
   }
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2) {
+    .pfp {
+        height: 100%;
+        background-color: #f1b24a;
+        border-radius: 2px;
+        object-fit: cover;
+        margin-left: 2rem;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 4rem;
+        flex-direction: column;
+        background-color: rgba(255, 255, 255, 0.849);
+        width: 100%;
+        border-bottom-left-radius: 20px;
+        border-bottom-right-radius: 20px;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
     .sec1-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, min-max(200, 1fr));
+        grid-gap: 1rem;
+        row-gap: 4rem;
+        /* padding: 1rem; */
+    }
+    
+    /* .sec1-container {
         display: flex;
         align-items: center;
         justify-content: center;
         gap: 2rem;
-    }
+    } */
 
     .download-button {
         height: 35px;
