@@ -216,13 +216,7 @@ a {
     
 }
 
-.H-1 {
-    font-size: 2.6rem;
-    color: white;
-    font-family: 'BlackOps';
-    filter: drop-shadow(0 0 5px black);
-    
-}
+/* ------------------------------------------------------------------------------------------------------------------------- */
 
 .h1-intro-container {
     padding: 0 2rem;
@@ -407,6 +401,15 @@ a {
   /* Mobile view */
   @media only screen and (max-width: 767px) {
 
+    .H-1 {
+        font-size: 2.6rem;
+        color: white;
+        font-family: 'BlackOps';
+        filter: drop-shadow(0 0 5px black);
+        display: flex;
+       
+        
+    }
 
     .download-button {
         height: 35px;
@@ -801,6 +804,8 @@ a {
         padding: 4rem 1rem 1rem 1rem;
        
     }
+
+   
   }
 
   @media screen and (min-width: 540px) and (max-width: 720px) {
@@ -979,6 +984,17 @@ a {
         border-radius: 2px;
         transition: .15s;
     }
+
+    .H-1 {
+        font-size: 2.6rem;
+        color: white;
+        font-family: 'BlackOps';
+        filter: drop-shadow(0 0 5px black);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
 }
 
 
@@ -1023,6 +1039,16 @@ a {
         border-radius: 2px;
         transition: .15s;
     }
+
+    .H-1 {
+        font-size: 2.6rem;
+        color: white;
+        font-family: 'BlackOps';
+        filter: drop-shadow(0 0 5px black);
+        display: flex;
+        flex-direction: column;
+    }
+   
 }
 
 .icon-icon {
@@ -1059,6 +1085,28 @@ a {
     align-items: center;
     justify-content: center;
     overflow: hidden;
+}
+
+.links-work {
+    color: rgb(0, 153, 255);
+    font-size: 18px;
+    text-decoration: underline 1px lightblue;
+    text-underline-offset: 3px;
+    animation: .5ms;
+    font-weight: 600;
+}
+
+.links-work:hover {
+    text-shadow: 0 0 10px white;
+}
+
+.link-ss {
+    color: black;
+    font-size: 16px;
+}
+
+.link-ss:hover {
+    text-decoration: none !important;
 }
 
 
