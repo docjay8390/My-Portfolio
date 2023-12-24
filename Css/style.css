@@ -129,6 +129,14 @@ a {
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     }
 
+    #name {
+        color: red;
+        text-shadow: 0 0 10px black;
+        font-size: 3.8rem;
+        font-weight: 700;
+        
+    }
+
     .nav-menu.active {
         left: 0;
     }
@@ -165,6 +173,12 @@ a {
         transition: 0.10s;
     }
 
+    .im {
+        margin-right: 10px;
+        display: flex;
+        font-size: 2.4rem;
+    }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -177,6 +191,13 @@ a {
         text-align: center;
         transition: 0.3s;
         box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    #name {
+        color: red;
+        text-shadow: 0 0 10px black;
+        font-size: 3.2rem;
+        font-weight: 700;
+        
     }
 }
 
@@ -206,14 +227,6 @@ a {
     opacity: 0.1px;
     font-family: 'BlackOps';
     font-size: 1.7rem;
-}
-
-#name {
-    color: red;
-    text-shadow: 0 0 10px black;
-    font-size: 3.8rem;
-    font-weight: 700;
-    
 }
 
 /* ------------------------------------------------------------------------------------------------------------------------- */
@@ -274,7 +287,13 @@ a {
         gap: 4rem;
     }
 
-    
+    #name {
+        color: red;
+        text-shadow: 0 0 10px black;
+        font-size: 3.8rem;
+        font-weight: 700;
+        
+    }
 
     .omen  {
         display: grid;
@@ -330,6 +349,7 @@ a {
         padding: 8rem 1rem;
         background-color: #4D774e;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -402,7 +422,7 @@ a {
   @media only screen and (max-width: 767px) {
 
     .H-1 {
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         color: white;
         font-family: 'BlackOps';
         filter: drop-shadow(0 0 5px black);
@@ -565,6 +585,7 @@ a {
         padding: 5rem 1rem;
         background-color: #4D774e;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         text-align: center;
@@ -652,6 +673,14 @@ a {
         border-radius: 2px;
         object-fit: cover;
         margin-left: 2rem;
+    }
+
+    #name {
+        color: red;
+        text-shadow: 0 0 10px black;
+        font-size: 3.8rem;
+        font-weight: 700;
+        
     }
     
     .nav-menu {
@@ -951,6 +980,7 @@ a {
         height: 100%;
         background-color: #4D774e;
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
         border-bottom: solid 1px white;
@@ -1002,6 +1032,7 @@ a {
 
     #about {
         display: flex;
+        flex-direction: column;
         background-color: #4D774e;
         align-items: center;
         justify-content: center;
